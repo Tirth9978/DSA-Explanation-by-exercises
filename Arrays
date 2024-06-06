@@ -1,4 +1,6 @@
-# Find The Lowest Value in an Array with a normal method
+(1) Find The Lowest Value in an Array with a normal method
+
+
     --> Code :
             #include<iostream>
             using namespace std;
@@ -27,7 +29,9 @@
 
 
 
-#	Bubble Sort
+(2) Bubble Sort
+
+
     -->Code :
             #include<iostream>
             using namespace std;
@@ -55,4 +59,6 @@
                 return 0;
             }
     -->Time Complexity: O(n^2) 
-                  
+
+
+*******************************************************NEW****************************************************************
