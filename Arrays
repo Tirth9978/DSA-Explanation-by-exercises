@@ -1,0 +1,52 @@
+# Find The Lowest Value in an Array with a normal method
+    --> Code :
+            #include<iostream>
+            using namespace std;
+            
+            int main(){
+                int arr[] = {7,12,5,11,3};
+                int min = arr[0] , i;
+                cout << "Array is ";
+                for (i=0;i<5;i++){
+                    cout << arr[i] << "  " ;
+                }
+                for (i=0;i<5;i++){
+                    if (min > arr[i]){
+                        min = arr[i];
+                    }
+                }
+                cout << endl;
+                cout << "Lowest value is " << min ;
+                return 0;
+            }
+    --> Time Complexity: O(n)
+
+#	Bubble Sort
+    -->Code :
+            #include<iostream>
+            using namespace std;
+            
+            int main(){
+                int arr[] = {7,12,5,11,3} , i,j;
+                cout << "Array:";
+                for (i=0;i<5;i++){
+                    cout << arr[i] << "  ";
+                }
+                cout << endl;
+                
+                for (i= 0;i<4;i++){
+                    for (j=0;j<5;j++){
+                        if (arr[j] > arr[j+1]){
+                            int a = 0;
+                            a = arr[j];
+                            arr[j] = arr[j+1];
+                            arr[j+1] = a;
+                        }
+                    }
+                }
+                
+                cout << "Lowest value is " << arr[0] ;
+                return 0;
+            }
+    -->Time Complexity: O(n^2) 
+                  
