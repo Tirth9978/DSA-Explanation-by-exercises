@@ -62,3 +62,40 @@
 
 
 *******************************************************NEW****************************************************************
+
+(3) Selection Sort:
+        
+    --> Code : 
+            #include<iostream>
+            using namespace std;
+            
+            int main(){
+                int n,i,j,k;
+                cout << "Enter the size of an array:";
+                cin >> n;
+                int arr[n];
+                for (i=0;i<n;i++){
+                    cout << "Enter the number:";
+                    cin >> arr[i];
+                }
+                cout << "Array :  ";
+                for (i=0;i<n;i++){
+                    cout << arr[i] << "  " ;
+                }
+                for (i=0;i<n-1;i++){
+                    for (j=i+1;j<n;j++){
+                        if (arr[i] > arr[j]){
+                            int a = 0;
+                            a = arr[i];
+                            arr[i] = arr[j];
+                            arr[j] = a;
+                        }
+                    }
+                }
+                cout << endl << "New array :  ";
+                for (i=0;i<n;i++){
+                    cout << arr[i] << "  " ;
+                }
+                return 0;
+            }
+            
